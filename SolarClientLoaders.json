@@ -1,0 +1,32 @@
+{
+    "games": [
+        {
+            "name": "BlockmanGO",
+            "isUsed": true
+        },
+        {
+            "name": "Minecraft",
+            "isUsed": true
+        },
+        {
+            "name": "Roblox",
+            "isUsed": true
+        }
+    ],
+    "loadClient": function() {
+        let isBlockmanGOUsed = this.games.some(game => game.name === "BlockmanGO" && game.isUsed);
+        let isMinecraftUsed = this.games.some(game => game.name === "Minecraft" && game.isUsed);
+        let isRobloxUsed = this.games.some(game => game.name === "Roblox" && game.isUsed);
+
+CopyReplit
+    if (isBlockmanGOUsed || isMinecraftUsed || isRobloxUsed) {
+        console.log("Client loaded successfully for the following games:");
+        this.games.forEach(game => {
+            if (game.isUsed) {
+                console.log("- " + game.name);
+            }
+        });
+    } else {
+        console.log("Client cannot be loaded. Make sure you are using BlockmanGO, Minecraft, or Roblox");
+    }
+}
