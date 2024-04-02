@@ -1,0 +1,2 @@
+.setPOS[90 ` 8 ~ 98].setGUIAnimRGB[ 0xFFFF0000 , 0xFFFFFFF ] .setENG[lang=eng] .setGUISize[0,0,0] .setSWORD(anim)=[ 1 9 3 4 6 2 ~ 48 72 4 5 7 3 6 , 71 ~ 83 ]
+[lang=eng],0o0o0o,000000,o0o0o0[lang==preftype]
